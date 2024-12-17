@@ -1,0 +1,230 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat Alternates;
+    background-color: #F9F9F9;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.center {
+    padding-left: calc(50% - 720px);
+    padding-right: calc(50% - 720px);
+}
+
+/* Хедер */
+.header {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header__container {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    color: rgb(69, 64, 61);
+    font-family: Montserrat Alternates;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: uppercase;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 120px;
+}
+
+.header__nav {
+    margin-left: 256px;
+}
+
+.header__menu {
+    display: flex;
+    gap: 48px;
+}
+
+.header__link {
+    color: rgb(69, 64, 61);
+    font-family: Montserrat Alternates;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    transition: color 0.3s;
+}
+
+.header__link:hover {
+    color: rgb(162, 101, 57);
+}
+
+.header__button {
+    padding: 16px 36px;
+    color: rgb(162, 101, 57);
+    transition: all 0.3s;
+    box-sizing: border-box;
+    border: 1px solid rgb(162, 101, 57);
+    border-radius: 24px;
+    color: rgb(162, 101, 57);
+    font-family: Montserrat Alternates;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 169px;
+    height: 52px;
+    margin-right: 120px;
+}
+
+.header__button:hover {
+    background-color: rgb(162, 101, 57);
+    color: #fff;
+}
+
+/* Главный экран */
+
+.hero {
+    display: flex;
+    align-items: center;
+    max-width: 1440px;
+    background-color: #FFF;
+}
+
+.hero__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    padding-left: 120px;
+}
+
+.hero__content {
+    max-width: 586px;
+}
+
+.hero__title {
+    color: rgb(69, 64, 61);
+    font-family: Montserrat Alternates;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 118px;
+    margin-bottom: 24px;
+
+}
+
+.hero__subtitle {
+    color: rgb(69, 64, 61);
+    font-family: Montserrat Alternates;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.hero__description {
+    color: rgb(69, 64, 61);
+    font-family: Montserrat Alternates;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+.hero__button {
+    display: inline-block;
+    padding: 16px 36px;
+    border: 1px solid rgb(162, 101, 57);
+    transition: all 0.3s;
+    box-sizing: border-box;
+    border-radius: 24px;
+    color: rgb(162, 101, 57);
+    font-family: Montserrat Alternates;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    width: 366px;
+    height: 52px;
+}
+
+.hero__button:hover {
+    background-color: rgb(162, 101, 57);
+    color: #fff;
+}
+
+.hero__image {
+    overflow:hidden;
+}
+
+.hero__photo {
+    width: 1220.06px;
+    height: 861.24px;
+}
+
+.table-items {
+    position: relative;
+}
+
+.item1 {
+    position: absolute;
+    width: 569.93px;
+    height: 569.93px;
+    right: -113px;
+    top: -615px;
+}
+.item2 {
+    position: absolute;
+    width: 393.55px;
+    height: 393.55px;
+    right: 330px;
+    top: -447px;
+}
+.item3 {
+    position: absolute;
+    top: -850px;
+    right: 190px;
+}
+.item4 {    
+    right: 45px;
+    position: absolute;
+    top: -756px;
+}
+.item5 {
+    position: absolute;
+}
+.item1, .item2, .item3 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item1:hover, .item2:hover, .item3:hover {
+    transform: scale(1.05) rotate(-10deg);
+}
+
