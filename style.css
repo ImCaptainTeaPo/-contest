@@ -37,6 +37,10 @@ ul {
     z-index: 1000;
 }
 
+.header__topmenu-mob-button {
+    display: none;
+}
+
 .header__container {
     height: 120px;
     display: flex;
@@ -60,6 +64,10 @@ ul {
 
 .header__nav {
     margin-left: 256px;
+}
+
+.header__nav-container-mob {
+    display: none;
 }
 
 .header__menu {
@@ -383,3 +391,240 @@ ul {
     margin-bottom: 20px;
   }
   
+/* Адаптив для планшетов (768px) */
+@media screen and (max-width: 768px) {
+
+    .header {
+        height: 100px;
+    }
+
+    .header__topmenu-mob-button {
+        display: none;
+    }
+
+    .header__container {
+        justify-content: space-between;
+        height: 100px;
+    }
+
+    .header__nav-container-mob {
+        display: none;
+    }
+
+    .header__logo {
+        font-size: 24px;
+        padding-left: 50px;
+    }
+
+    .header__nav {
+        margin-right: 50px;
+        margin-left: 10px;
+    }
+
+    .header__menu {
+        gap: 20px;
+    }
+
+    .header__button {
+        display: none;
+    }
+
+    .hero__container {
+        padding-left: 50px;
+        background-image: url(./img/item3.png);
+        background-repeat: no-repeat;
+        background-size: 200px;
+        background-position: 100% -35%;
+    }
+
+    .hero__title {
+        font-size: 36px;
+        line-height: 1.2;
+        margin-top: 20px;
+    }
+
+    .hero__subtitle {
+        font-size: 18px;
+    }
+
+    .hero__description {
+        font-size: 14px;
+        margin-top: 16px;
+        margin-bottom: 20px;
+    }
+
+    .hero__photo {
+        display: none;
+    }
+
+    .menu__container_top {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .menu__title {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .menu__categories {
+        gap: 10px;
+    }
+
+    .menu__category {
+        font-size: 14px;
+    }
+
+    .menu__items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu__item {
+        width: 100%;
+    }
+}
+
+/* Адаптив для смартфонов (320px - 767px) */
+@media screen and (max-width: 767px) {
+    .header__container {
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .header__logo {
+        padding: 0;
+        padding-left: 30px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .header__nav {
+        margin: 0;
+    }
+    
+    
+
+    .header__menu {
+        display: none;
+        gap: 5px;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .header__topmenu-mob-button {
+        background: none;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+    }
+
+    .header__topmenu-mob {
+        height: 30px;
+    }
+
+    .header__nav-container-mob {
+        display: none;
+    }
+
+    .header__nav-container-mob--active {
+        display: block;
+    }
+
+    .header__menu-mob {
+        display: block;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 50px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 20px;
+    }
+    
+    .header__nav-mob {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+
+    .hero__container {
+        padding-left: 20px;
+        padding-right: 20px;
+        background-image: none;
+    }
+
+    .hero__image {
+        display: none;
+    }
+
+    .header__button {
+        width: 120px;
+        height: 36px;
+        font-size: 12px;
+    }
+
+    .hero__title {
+        font-size: 28px;
+        line-height: 1.2;
+        margin-top: 20px;
+    }
+
+    .hero__subtitle {
+        font-size: 16px;
+    }
+
+    .hero__description {
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 16px;
+    }
+
+    .hero__button {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .hero__photo {
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    .menu__container_top {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .menu__title {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .menu__categories {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .menu__category {
+        width: auto;
+        font-size: 12px;
+    }
+
+    .menu__items {
+        grid-template-columns: 1fr;
+    }
+
+    .menu__item {
+        width: 100%;
+    }
+
+    .menu__item-image {
+        object-fit: cover;
+    }
+}

@@ -18,3 +18,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuButton = document.querySelector(".header__topmenu-mob-button");
+    const mobileMenu = document.querySelector(".header__nav-container-mob");
+
+    menuButton.addEventListener("click", () => {
+        // Переключаем класс для отображения или скрытия меню
+        mobileMenu.classList.toggle("header__nav-container-mob--active");
+    });
+});
